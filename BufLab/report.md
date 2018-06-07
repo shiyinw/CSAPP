@@ -1,7 +1,5 @@
 # Buf Lab
 
-## 王世因 2016011246
-
 ### gdb
 
 ```assembly
