@@ -4,7 +4,7 @@
 
 #### 高速缓存的结构
 
-![cache](/Users/flyingturtle/Desktop/2018Spring/计算机组成与系统结构/CacheLab/cache.png)
+![cache](./cache.png)
 
 在高速缓存中，我们把一块缓存分成$S=2^s$个CacheSet，然后每个CacheSet中含有$E$个CacheLine，CacheLine就是在这个模型中最小的存储索引结构，含有tag，valid，block数据。他们的数据结构实现为：
 
@@ -132,7 +132,7 @@ void sim(struct Cache cache, unsigned long long int addr) {
 
 这个Cache模拟器通过了所有的样例：
 
-![A](/Users/flyingturtle/Desktop/2018Spring/计算机组成与系统结构/CacheLab/A.png)
+![A](./A.png)
 
 #### 体会与展望
 
@@ -201,7 +201,7 @@ for (ii = 0; ii < M; ii += 8){
 
 #### Merge
 
-![merge](/Users/flyingturtle/Desktop/2018Spring/计算机组成与系统结构/CacheLab/merge.png)
+![merge](./merge.png)
 
 注意到每个CacheLine里面可以存8个int，所以在如上分块的时候，可以进行连续两行之间的merge，来大幅度降低miss的数量。最终相比只有分块的情况下减少了大约两百多个miss。
 
@@ -211,7 +211,7 @@ for (ii = 0; ii < M; ii += 8){
 
 #### 结果
 
-![B](/Users/flyingturtle/Desktop/2018Spring/计算机组成与系统结构/CacheLab/B.png)
+![B](./B.png)
 
 ### 参考文献
 

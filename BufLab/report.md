@@ -241,7 +241,7 @@ ret
 a8 58 8d 6c 24 18 68 0e 8d 04 08 c3 88 32 68 55
 ```
 
-![result](/Users/flyingturtle/Desktop/2018Spring/计算机组成与系统结构/buflab-handout/2016011246_王世因/result.png)
+![result](./result.png)
 
 ### 附件说明
 
